@@ -50,4 +50,11 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Arma"))
+        {
+            Debug.Log("Golpe");
+        } 
+    }
 }
