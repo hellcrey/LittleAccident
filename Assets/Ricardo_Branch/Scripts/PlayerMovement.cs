@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 12f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
+    public float scale = 2;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -55,6 +56,14 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Arma"))
         {
             Debug.Log("Golpe");
-        } 
+        }
+        if (other.gameObject.CompareTag("PowerUp"))
+        {
+            Destroy(other.gameObject);
+            transform.localScale = new Vector3(scale, scale, scale);
+            scale++;
+            Debug.Log(scale);
+        }
     }
+
 }
