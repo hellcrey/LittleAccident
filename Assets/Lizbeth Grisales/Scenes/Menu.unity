@@ -689,7 +689,7 @@ GameObject:
   - component: {fileID: 532650574}
   - component: {fileID: 532650573}
   m_Layer: 5
-  m_Name: Hard
+  m_Name: Difficult
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -821,7 +821,6 @@ GameObject:
   - component: {fileID: 671383529}
   - component: {fileID: 671383528}
   - component: {fileID: 671383527}
-  - component: {fileID: 671383526}
   m_Layer: 5
   m_Name: Easy
   m_TagString: Untagged
@@ -849,18 +848,6 @@ RectTransform:
   m_AnchoredPosition: {x: -21, y: 178}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &671383526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671383524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bb520bdcf26e8046a7f97229c38df91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &671383527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1655,7 +1642,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back
+  m_text: Difficult
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2266,7 +2253,6 @@ GameObject:
   - component: {fileID: 1538630982}
   - component: {fileID: 1538630981}
   - component: {fileID: 1538630980}
-  - component: {fileID: 1538630983}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -2388,18 +2374,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538630978}
   m_CullTransparentMesh: 1
---- !u!114 &1538630983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538630978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bb520bdcf26e8046a7f97229c38df91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1644530745
 GameObject:
   m_ObjectHideFlags: 0
