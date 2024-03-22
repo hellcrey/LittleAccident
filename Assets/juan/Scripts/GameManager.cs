@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     
-    private int collectibleNumber;
+    public int collectibleNumber;
 
   
-    private int totalCollectibleNumber;
+    public int totalCollectibleNumber;
 
 
 
