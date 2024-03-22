@@ -12,12 +12,13 @@ public class GameManager : MonoBehaviour
   
     public int totalCollectibleNumber;
 
+    public Canvas winnerCanvas;
+
 
 
     void Start()
     {
         totalCollectibleNumber = transform.childCount;
-       
     }
 
 
@@ -25,10 +26,9 @@ public class GameManager : MonoBehaviour
     {
         if (transform.childCount <= 0)
         {
+            winnerCanvas.gameObject.SetActive(true);
             Debug.Log("YOU WIN");
-      
         }
-
-
     }
+
 }

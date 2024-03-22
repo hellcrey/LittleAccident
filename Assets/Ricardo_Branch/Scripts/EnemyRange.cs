@@ -25,6 +25,9 @@ public class EnemyRange : MonoBehaviour
             animator.SetBool("run", false);
             animator.SetBool("attack", true);
             enemy.isAttacking = true;
+            enemy.CancelInvoke();
+            enemy.wanderingFX.PlayOneShot(enemy.attackSound, 1);
+            enemy.InvokeRepeating("RoarSound", enemy.startDelay + 5.0f, enemy.startRepeat);
             GetComponent<CapsuleCollider>().enabled = false;
         }
     }

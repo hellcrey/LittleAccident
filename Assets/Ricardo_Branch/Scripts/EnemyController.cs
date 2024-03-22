@@ -20,11 +20,24 @@ public class EnemyController : MonoBehaviour
     public float attackDistance;
     public float sightDistance;
     public float speed;
+
+    public AudioSource wanderingFX;
+    public AudioClip wanderingClip;
+    public AudioClip attackSound;
+
+    public int startDelay;
+    public int startRepeat;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         target = GameObject.Find("FirstPersonPlayer");
+        sightDistance = PlayerPrefs.GetInt("Level");
+        InvokeRepeating("RoarSound", startDelay, startRepeat);
+
     }
 
     // Update is called once per frame
@@ -103,6 +116,10 @@ public class EnemyController : MonoBehaviour
         isAttacking = false;
         range.GetComponent<CapsuleCollider>().enabled = true;
 
+    }
+    public void RoarSound()
+    {
+        wanderingFX.PlayOneShot(wanderingClip, 1f);
     }
 
 }
